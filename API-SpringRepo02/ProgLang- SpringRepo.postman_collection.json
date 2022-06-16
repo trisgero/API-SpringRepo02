@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "649adaef-477a-4b0f-bfbf-cb7bf348e029",
+		"name": "ProgLang- SpringRepo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20118818"
+	},
+	"item": [
+		{
+			"name": "INSERT programmingLanguage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"C++\",\r\n    \"firstAppearance\":1985,\r\n    \"inventor\":\"Bjarne Stroustrup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/repo-prog-languages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"repo-prog-languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL programmingLanguage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"C++\",\r\n    \"firstAppearance\":1985,\r\n    \"inventor\":\"Bjarne Stroustrup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/repo-prog-languages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"repo-prog-languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL progLang page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"C++\",\r\n    \"firstAppearance\":1985,\r\n    \"inventor\":\"Bjarne Stroustrup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/repo-prog-languages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"repo-prog-languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MODIFY progLang inventor",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inventor\":\"Tristan Geronimo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/repo-prog-languages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"repo-prog-languages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
